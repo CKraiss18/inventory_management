@@ -1,0 +1,13 @@
+Inventory Report
+Generated on: 2024-11-19 18:47:25
+
+Item Name: Laptop, Quantity: 10
+
+Item Name: Mouse, Quantity: 3
+WARNING: Low Mouse stock! Quantity: 3
+
+Item Name: Keyboard, Quantity: 2
+WARNING: Low Keyboard stock! Quantity: 2
+
+Item Name: Monitor, Quantity: 5
+
