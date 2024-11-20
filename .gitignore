@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment files
+.env/
+.venv/
+
+# Dynamically generated files
+Customer_Information.csv
+purchase_records.csv
+inventory_report.txt
+
+# IDE specific files (optional, for common editors)
+.idea/
+.vscode/
