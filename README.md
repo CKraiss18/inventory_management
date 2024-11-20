@@ -18,7 +18,8 @@ To install the package locally:
    cd inventory_management
 
 2. Install the package.
-    pip install -e
+    ```bash
+    pip install -e .
 
 ## Requirements
 
