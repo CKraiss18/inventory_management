@@ -52,8 +52,24 @@ After installation, you can import the package and use its components:
 
 ## Running Tests
 
-The package includes a suite of tests to validate its functionality. To run the tests, navigate to the package directory and run:
+The package includes a suite of tests to validate its functionality. To run the tests, navigate to the package directory and execute the following command:
 `python tests/test_inventory.py`
+
+### Important Notes:
+
+File Cleanup: During the tests, several files (Customer_Information.csv, purchase_records.csv, and inventory_report.txt) are created to validate CSV handling and report generation. However, these files are automatically removed at the end of the test suite using a cleanup process (teardown_files()).
+Viewing Generated Files: If you wish to inspect the generated files during testing:
+
+- Comment out the teardown_files() function in the test file (tests/test_inventory.py).
+- Alternatively, modify the teardown_files() function to exclude specific files from being removed (e.g., inventory_report.txt).
+
+### In Normal Use:
+When the package is used outside of testing, the generated files will persist and will not be automatically removed. These files are designed to provide actionable data:
+
+- Customer_Information.csv: Tracks customer information and purchase history.
+- purchase_records.csv: Logs all purchase transactions.
+- inventory_report.txt: Contains inventory details and low-stock warnings.
+
 
 ## File Outputs
 
