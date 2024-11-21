@@ -57,11 +57,11 @@ The package includes a suite of tests to validate its functionality. To run the 
 
 ### Important Notes:
 
-File Cleanup: During the tests, several files (Customer_Information.csv, purchase_records.csv, and inventory_report.txt) are created to validate CSV handling and report generation. However, these files are automatically removed at the end of the test suite using a cleanup process (teardown_files()).
-Viewing Generated Files: If you wish to inspect the generated files during testing:
+- File Cleanup: During the tests, several files (Customer_Information.csv, purchase_records.csv, and inventory_report.txt) are created to validate CSV handling and report generation. However, these files are automatically removed at the end of the test suite using a cleanup process (teardown_files()).
+- Viewing Generated Files: If you wish to inspect the generated files during testing:
 
-- Comment out the teardown_files() function in the test file (tests/test_inventory.py).
-- Alternatively, modify the teardown_files() function to exclude specific files from being removed (e.g., inventory_report.txt).
+    - Comment out the teardown_files() function in the test file (tests/test_inventory.py).
+    - Alternatively, modify the teardown_files() function to exclude specific files from being removed (e.g., inventory_report.txt).
 
 ### In Normal Use:
 When the package is used outside of testing, the generated files will persist and will not be automatically removed. These files are designed to provide actionable data:
