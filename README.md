@@ -53,7 +53,7 @@ After installation, you can import the package and use its components:
 ## Running Tests
 
 The package includes a suite of tests to validate its functionality. To run the tests, navigate to the package directory and run:
-python tests/test_inventory.py
+`python tests/test_inventory.py`
 
 ## File Outputs
 
